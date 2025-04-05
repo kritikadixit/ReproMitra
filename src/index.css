@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Fonts/Inter/Inter-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/Fonts/Inter/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pimaryH';
+  src: url('./assets/Fonts/Merriweather/static/Merriweather_24pt_SemiCondensed-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+

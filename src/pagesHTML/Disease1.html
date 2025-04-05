@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Medical Information Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://ai-public.creatie.ai/gen_page/tailwind-custom.css" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
+    <script src="https://ai-public.creatie.ai/gen_page/tailwind-config.min.js" data-color="#1B9AF5" data-border-radius="medium"></script>
+</head>
+<body class="bg-gray-50 font-sans">
+    <header class="bg-white shadow-sm">
+        <nav class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <img class="h-8 w-auto" src="https://ai-public.creatie.ai/gen_page/logo_placeholder.png" alt="Logo"/>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#" class="text-custom px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#" class="text-gray-600 hover:text-custom px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                        <a href="#" class="text-gray-600 hover:text-custom px-3 py-2 rounded-md text-sm font-medium">About</a>
+                        <a href="#" class="text-gray-600 hover:text-custom px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="mb-8">
+            <div class="border-b border-gray-200">
+                <nav class="flex space-x-8" aria-label="Tabs"><button class="text-custom border-custom border-b-2 whitespace-nowrap py-4 px-1 font-medium text-sm" aria-current="page">Overview</button><button class="text-gray-500 hover:text-gray-700 whitespace-nowrap py-4 px-1 font-medium text-sm">Diagnosis &amp; Treatment</button><button class="text-gray-500 hover:text-gray-700 whitespace-nowrap py-4 px-1 font-medium text-sm">Prevention &amp; Lifestyle</button><button class="text-gray-500 hover:text-gray-700 whitespace-nowrap py-4 px-1 font-medium text-sm" id="prevention-diet">Diet &amp; Nutrition</button></nav>
+            </div>
+        </div>
+
+        <div id="overview" class="space-y-8">
+            <section class="bg-white rounded-lg shadow p-6">
+                <div class="flex items-start space-x-4">
+                    <div class="flex-shrink-0">
+                        <i class="fas fa-heartbeat text-custom text-3xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-semibold text-gray-900">Cardiovascular Health Overview</h2>
+                        <p class="mt-2 text-gray-600">Understanding and maintaining cardiovascular health is crucial for overall well-being. This comprehensive guide provides essential information about heart health, prevention strategies, and treatment options.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="text-center">
+                        <i class="fas fa-chart-line text-custom text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Annual Cases</h3>
+                        <p class="mt-2 text-3xl font-bold text-custom">17.9M</p>
+                        <p class="mt-1 text-gray-600">Global cases per year</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="text-center">
+                        <i class="fas fa-procedures text-custom text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Recovery Rate</h3>
+                        <p class="mt-2 text-3xl font-bold text-custom">85%</p>
+                        <p class="mt-1 text-gray-600">With proper treatment</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow p-6">
+                    <div class="text-center">
+                        <i class="fas fa-user-md text-custom text-3xl mb-4"></i>
+                        <h3 class="text-lg font-semibold text-gray-900">Prevention Success</h3>
+                        <p class="mt-2 text-3xl font-bold text-custom">80%</p>
+                        <p class="mt-1 text-gray-600">Through lifestyle changes</p>
+                    </div>
+                </div>
+            <div class="bg-white rounded-lg shadow p-6"><div class="text-center"><i class="fas fa-globe text-custom text-3xl mb-4"></i><h3 class="text-lg font-semibold text-gray-900">Global Impact</h3><p class="mt-2 text-3xl font-bold text-custom">31%</p><p class="mt-1 text-gray-600">Of global deaths</p></div></div></section>
+
+            <section class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Disease Progression</h2>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center justify-center w-8 h-8 bg-custom bg-opacity-10 rounded-full mb-3">
+                            <span class="text-custom font-semibold">1</span>
+                        </div>
+                        <h3 class="font-medium text-gray-900">Early Stage</h3>
+                        <p class="mt-2 text-sm text-gray-600">Initial symptoms may be mild or unnoticeable</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center justify-center w-8 h-8 bg-custom bg-opacity-10 rounded-full mb-3">
+                            <span class="text-custom font-semibold">2</span>
+                        </div>
+                        <h3 class="font-medium text-gray-900">Developing Stage</h3>
+                        <p class="mt-2 text-sm text-gray-600">Symptoms become more noticeable</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center justify-center w-8 h-8 bg-custom bg-opacity-10 rounded-full mb-3">
+                            <span class="text-custom font-semibold">3</span>
+                        </div>
+                        <h3 class="font-medium text-gray-900">Advanced Stage</h3>
+                        <p class="mt-2 text-sm text-gray-600">Significant impact on daily activities</p>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg p-4">
+                        <div class="flex items-center justify-center w-8 h-8 bg-custom bg-opacity-10 rounded-full mb-3">
+                            <span class="text-custom font-semibold">4</span>
+                        </div>
+                        <h3 class="font-medium text-gray-900">Critical Stage</h3>
+                        <p class="mt-2 text-sm text-gray-600">Requires immediate medical attention</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white rounded-lg shadow p-6">
+                <h2 class="text-xl font-semibold text-gray-900 mb-4">Related Resources</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A professional medical consultation scene with doctor and patient discussing health matters in a modern medical office with natural lighting and medical equipment in background&width=400&height=300&orientation=landscape&flag=2dfe08ab-d502-42bf-b56f-9bc263cfc1f4&flag=100a5e4d-14b1-45ff-9c49-bf306f33ea7d&flag=f193a94f-4816-485a-8319-621f53a53665&flag=11761b90-a003-4f27-a00a-353dd681cec9" alt="Medical Consultation" class="w-full h-48 object-cover"/>
+                        <div class="p-4">
+                            <h3 class="font-medium text-gray-900">Patient Guidelines</h3>
+                            <p class="mt-2 text-sm text-gray-600">Comprehensive guide for patients and caregivers</p>
+                            <button class="mt-4 !rounded-button bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-custom/90">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A healthy lifestyle scene showing fresh fruits, vegetables, exercise equipment and wellness items arranged on a clean white surface&width=400&height=300&orientation=landscape&flag=bd835dc9-4a6c-4c9e-b062-dcfa9b140747&flag=ec62cce3-1a82-4017-9cfb-d9cd7c9f68f4&flag=4c6f3313-9559-4085-ad28-31392406275f&flag=f1917d9f-2079-474b-9a24-885a949232bc" alt="Healthy Lifestyle" class="w-full h-48 object-cover"/>
+                        <div class="p-4">
+                            <h3 class="font-medium text-gray-900">Lifestyle Tips</h3>
+                            <p class="mt-2 text-sm text-gray-600">Daily habits for better health management</p>
+                            <button class="mt-4 !rounded-button bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-custom/90">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="border border-gray-200 rounded-lg overflow-hidden">
+                        <img src="https://creatie.ai/ai/api/search-image?query=A modern medical research laboratory with advanced equipment, microscopes, and researchers working in a clean, well-lit environment&width=400&height=300&orientation=landscape&flag=ed759ac5-b4d6-4d0c-9a09-6b3eaed32ca3&flag=1ba0f389-99f3-49c2-864e-2749ccad3573&flag=38963846-51e7-4e57-9c17-d28aff256cf2&flag=5b51963b-033f-42c5-b858-c61f6cf340d1" alt="Medical Research" class="w-full h-48 object-cover"/>
+                        <div class="p-4">
+                            <h3 class="font-medium text-gray-900">Latest Research</h3>
+                            <p class="mt-2 text-sm text-gray-600">Recent medical breakthroughs and studies</p>
+                            <button class="mt-4 !rounded-button bg-custom text-white px-4 py-2 text-sm font-medium hover:bg-custom/90">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <section class="bg-white rounded-lg shadow p-6 mt-6"><h2 class="text-xl font-semibold text-gray-900 mb-4">Risk Factors Analysis</h2><div class="grid grid-cols-2 md:grid-cols-4 gap-4"><div class="text-center p-4"><i class="fas fa-smoking text-custom text-2xl mb-2"></i><h4 class="font-medium text-gray-900">Smoking</h4><p class="text-sm text-gray-600">30% increased risk</p></div><div class="text-center p-4"><i class="fas fa-hamburger text-custom text-2xl mb-2"></i><h4 class="font-medium text-gray-900">Poor Diet</h4><p class="text-sm text-gray-600">25% increased risk</p></div><div class="text-center p-4"><i class="fas fa-couch text-custom text-2xl mb-2"></i><h4 class="font-medium text-gray-900">Sedentary Lifestyle</h4><p class="text-sm text-gray-600">20% increased risk</p></div><div class="text-center p-4"><i class="fas fa-heart-broken text-custom text-2xl mb-2"></i><h4 class="font-medium text-gray-900">High Blood Pressure</h4><p class="text-sm text-gray-600">40% increased risk</p></div></div></section></div><div id="diagnosis" class="space-y-8 hidden"><section class="bg-white rounded-lg shadow p-6"><div class="flex items-start space-x-4"><div class="flex-shrink-0"><i class="fas fa-stethoscope text-custom text-3xl"></i></div><div><h2 class="text-xl font-semibold text-gray-900">Diagnosis Methods</h2><p class="mt-2 text-gray-600">Various techniques and tests used to diagnose cardiovascular conditions.</p></div></div></section><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"><div class="bg-white rounded-lg shadow p-6"><i class="fas fa-heartbeat text-custom text-2xl mb-3"></i><h3 class="font-medium text-gray-900">ECG/EKG</h3><p class="mt-2 text-sm text-gray-600">Measures electrical activity of the heart</p></div><div class="bg-white rounded-lg shadow p-6"><i class="fas fa-wave-square text-custom text-2xl mb-3"></i><h3 class="font-medium text-gray-900">Stress Test</h3><p class="mt-2 text-sm text-gray-600">Monitors heart during physical activity</p></div><div class="bg-white rounded-lg shadow p-6"><i class="fas fa-vial text-custom text-2xl mb-3"></i><h3 class="font-medium text-gray-900">Blood Tests</h3><p class="mt-2 text-sm text-gray-600">Checks cholesterol and other markers</p></div></div></div><div id="prevention" class="space-y-8 hidden"><section class="bg-white rounded-lg shadow p-6"><div class="flex items-start space-x-4"><div class="flex-shrink-0"><i class="fas fa-shield-alt text-custom text-3xl"></i></div><div><h2 class="text-xl font-semibold text-gray-900">Prevention &amp; Lifestyle Guidelines</h2><p class="mt-2 text-gray-600">Comprehensive approach to prevent cardiovascular diseases and maintain optimal health.</p></div></div></section><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-clipboard-check text-custom mr-2"></i>Prevention Checklist</h3><ul class="space-y-3"><li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Regular health screenings</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Vaccination schedule</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Hand hygiene</li><li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Risk factor monitoring</li></ul></div><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-heart-pulse text-custom mr-2"></i>Healthy Habits</h3><div class="space-y-4"><div class="flex items-center justify-between"><span>Daily Exercise</span><div class="w-16 h-4 bg-gray-200 rounded-full"><div class="w-3/4 h-full bg-custom rounded-full"></div></div></div><div class="flex items-center justify-between"><span>Sleep Quality</span><div class="w-16 h-4 bg-gray-200 rounded-full"><div class="w-1/2 h-full bg-custom rounded-full"></div></div></div><div class="flex items-center justify-between"><span>Stress Management</span><div class="w-16 h-4 bg-gray-200 rounded-full"><div class="w-2/3 h-full bg-custom rounded-full"></div></div></div></div></div><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-chart-line text-custom mr-2"></i>Risk Awareness</h3><div class="relative pt-1"><div class="flex mb-2 items-center justify-between"><div class="text-sm font-semibold inline-block text-custom">High Risk Factors</div></div><div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-custom-100"><div style="width:70%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-custom"></div></div><div class="text-sm text-gray-600">70% of risks are preventable through lifestyle changes</div></div></div></div></div><div id="diet" class="space-y-8 hidden"><section class="bg-white rounded-lg shadow p-6"><div class="flex items-start space-x-4"><div class="flex-shrink-0"><i class="fas fa-utensils text-custom text-3xl"></i></div><div><h2 class="text-xl font-semibold text-gray-900">Nutrition Guidelines</h2><p class="mt-2 text-gray-600">Optimal dietary recommendations for health maintenance and disease prevention.</p></div></div></section><div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6"><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-leaf text-custom mr-2"></i>Anti-inflammatory Foods</h3><div class="grid grid-cols-2 gap-2"><span class="text-sm p-2 bg-custom-50 rounded">Berries</span><span class="text-sm p-2 bg-custom-50 rounded">Leafy Greens</span><span class="text-sm p-2 bg-custom-50 rounded">Nuts</span><span class="text-sm p-2 bg-custom-50 rounded">Fatty Fish</span></div></div><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-glass-water text-custom mr-2"></i>Hydration Tracker</h3><div class="space-y-4"><div class="flex justify-between items-center"><span class="text-sm">Daily Goal: 8 glasses</span><span class="text-sm text-custom">5/8</span></div><div class="w-full bg-gray-200 rounded-full h-2.5"><div class="bg-custom h-2.5 rounded-full" style="width: 62%"></div></div></div></div><div class="bg-white rounded-lg shadow p-6"><h3 class="font-medium text-gray-900 mb-4"><i class="fas fa-calendar-day text-custom mr-2"></i>Meal Planning</h3><div class="space-y-2"><div class="p-2 bg-custom-50 rounded"><span class="font-medium">Breakfast:</span><br/><span class="text-sm">Oatmeal + Fruits</span></div><div class="p-2 bg-custom-50 rounded"><span class="font-medium">Lunch:</span><br/><span class="text-sm">Salad + Lean Protein</span></div><div class="p-2 bg-custom-50 rounded"><span class="font-medium">Dinner:</span><br/><span class="text-sm">Grilled Fish + Vegetables</span></div></div></div></div></div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Emergency Contacts</h3>
+                    <div class="mt-4 space-y-4">
+                        <p class="text-sm text-gray-600">Emergency: 911</p>
+                        <p class="text-sm text-gray-600">Health Helpline: 1-800-HEALTH</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Quick Links</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Find a Doctor</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Medical Services</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Patient Resources</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Legal</h3>
+                    <ul class="mt-4 space-y-4">
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-sm text-gray-600 hover:text-custom">Medical Disclaimer</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-sm font-semibold text-gray-900 tracking-wider uppercase">Connect With Us</h3>
+                    <div class="mt-4 flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-custom">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-200 pt-8">
+                <p class="text-sm text-gray-400 text-center">© 2024 Medical Information Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>document.addEventListener('DOMContentLoaded', function() { const tabs = document.querySelectorAll('nav button'); const contentSections = ['overview', 'diagnosis', 'prevention', 'diet'].map(id => document.getElementById(id)); tabs.forEach((tab, index) => { tab.addEventListener('click', () => { tabs.forEach(t => { t.classList.remove('text-custom', 'border-custom', 'border-b-2'); t.classList.add('text-gray-500', 'hover:text-gray-700'); }); tab.classList.remove('text-gray-500', 'hover:text-gray-700'); tab.classList.add('text-custom', 'border-custom', 'border-b-2'); contentSections.forEach(section => { if(section) { section.classList.add('hidden'); }}); if(contentSections[index]) { contentSections[index].classList.remove('hidden'); }}); }); });</script>
+
+
+
+
+</body></html>
