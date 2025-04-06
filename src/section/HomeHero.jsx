@@ -1,12 +1,17 @@
-
+import { toast } from "react-toastify";
 import React, { useEffect,useState } from "react";
 import Glide from "@glidejs/glide";
 import "@glidejs/glide/dist/css/glide.core.min.css";
 import "@glidejs/glide/dist/css/glide.theme.min.css";
 import { homeherobackground, searchline, micfill, miclisten,doctor,aiagent } from "../assets";
 import { NavLink, useNavigate } from "react-router-dom";
+import { handleLlamaQuery } from "../api/handleLlama.query";
+import { Loader2, Search } from "lucide-react";
 
 function HomeHero() {
+  const [Data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [searchValue, setSearchValue] = useState("");
   const navigate = useNavigate();
     useEffect(() => {
     const glide = new Glide(".glide", {
@@ -26,6 +31,29 @@ function HomeHero() {
   }; 
   const toggleChatPanel = () => {
     navigate("/chat");
+  };
+  const handleOnchange = (event) => {
+    setSearchValue(event.target.value);
+  };
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      if (!searchValue) return toast.error("Enter something...");
+      setIsLoading(true);
+      await handleLlamaQuery({
+        input: searchValue,
+        existingData: Data,
+        setData,
+        setInput: setSearchValue,
+        navigate,
+      });
+    } catch (error) {
+      toast.error(error.message || "Something went wrong");
+      console.error(error);
+      setIsLoading(false);
+    } finally {
+      setIsLoading(false);
+    }
   };
   return (
    
@@ -68,27 +96,48 @@ function HomeHero() {
                 </span>
                 Journey Starts Here
               </h1>
-              <div className="relative w-full max-w-3xl">
-                <div className="mb-6 text-center">
-                  <i className="fas fa-user-md text-7xl text-custom mb-4"></i>
-                </div>
-                <div className="flex items-center relative">
-                  <input
-                    type="search"
-                    placeholder="Search health issues, symptoms, or doctors..."
-                    className="w-full px-6 py-4 text-lg rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-custom focus:border-transparent"
-                  />
-                  <button className="absolute right-0 top-0 flex flex-col justify-center items-center h-full px-6 bg-custom text-white rounded-r-lg hover:bg-opacity-90">
-                    <img className="absolute w-6 h-6" src={searchline} alt="search-button" />
-                  </button>
-                  <button
-                    className="absolute flex flex-col justify-center items-center right-20 top-1/2 -translate-y-1/2 text-gray-400 hover:text-custom p-3 transition-colors"
-                    onClick={toggleMicIcon}
-                  >
-                    <img className="absolute transform transition-transform hover:scale-130" src={micIcon} alt="mic-button" />
-                  </button>
-                </div>
-              </div>
+              <form
+                  className="relative w-full max-w-3xl"
+                  onSubmit={handleFormSubmit}
+                >
+                  <div className="mb-6 text-center">
+                    <i className="fas fa-user-md text-7xl text-custom mb-4"></i>
+                  </div>
+                  <div className="flex items-center relative ">
+                    <input
+                      type="search"
+                      placeholder="Search health issues, symptoms, or doctors..."
+                      className="w-full px-6 py-4 text-lg rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-custom focus:border-transparent"
+                      onChange={handleOnchange}
+                      value={searchValue}
+                    />
+                    <button
+                      className={"absolute right-0 top-0 flex flex-col justify-center items-center h-full px-6 bg-custom text-white rounded-r-lg hover:bg-opacity-90"}
+                      type="submit"
+                      disabled={isLoading}
+                    >
+                      {isLoading ? (
+                        <Loader2
+                          className="animate-spin text-white"
+                          size={24}
+                        />
+                      ) : (
+                        <Search className="text-white" size={24} />
+                      )}
+                    </button>
+                    <button
+                      className="absolute flex flex-col justify-center items-center right-20 top-1/2 -translate-y-1/2 text-gray-400 hover:text-custom p-3 transition-colors"
+                      onClick={toggleMicIcon}
+                      type="button"
+                    >
+                      <img
+                        className="absolute transform transition-transform hover:scale-130"
+                        src={micIcon}
+                        alt="mic-button"
+                      />
+                    </button>
+                  </div>
+                </form>
               <div className="flex items-center space-x-4 text-sm text-gray-600">
                 <label className="flex items-center space-x-2 cursor-pointer">
                   <input type="checkbox" className="form-checkbox text-custom" />

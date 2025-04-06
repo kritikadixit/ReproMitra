@@ -4,7 +4,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import "./index.css";
 import React from "react";
-import App from "./app";
+import App from "./App";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ToastContainer
@@ -23,3 +23,4 @@ createRoot(document.getElementById("root")).render(
     <App />
   </StrictMode>
 );
+
